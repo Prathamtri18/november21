@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .banner {
+            background-color: #d9c3a5;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .product {
+            background-color: white;
+            width: 250px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .product img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #987654;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Dream Furniture</h1>
+        <p>Make Your Home Beautiful</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="banner" id="home">
+        <h2>Welcome to Dream Furniture</h2>
+        <p>Find the perfect furniture for your home.</p>
+        <button onclick="alert('Welcome to Dream Furniture!')">
+            Shop Now
+        </button>
+    </section>
+
+    <section id="products">
+        <h2 style="text-align:center;">Our Products</h2>
+
+        <div class="products">
+
+            <div class="product">
+                <img src="https://placehold.co/300x200?text=Sofa"
+                     alt="Sofa">
+                <h3>Modern Sofa</h3>
+                <p>Price: ₹15,000</p>
+                <button onclick="addToCart('Modern Sofa')">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product">
+                <img src="https://placehold.co/300x200?text=Bed"
+                     alt="Bed">
+                <h3>King Size Bed</h3>
+                <p>Price: ₹25,000</p>
+                <button onclick="addToCart('King Size Bed')">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product">
+                <img src="https://placehold.co/300x200?text=Table"
+                     alt="Table">
+                <h3>Dining Table</h3>
+                <p>Price: ₹12,000</p>
+                <button onclick="addToCart('Dining Table')">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" style="text-align:center; padding:30px;">
+        <h2>About Us</h2>
+        <p>We provide high-quality furniture at affordable prices.</p>
+    </section>
+
+    <section id="contact" style="text-align:center; padding:30px;">
+        <h2>Contact Us</h2>
+        <p>Email: dreamfurniture@example.com</p>
+        <p>Phone: 9876543210</p>
+    </section>
+
+    <footer>
+        <p>Copyright © 2026 Dream Furniture</p>
+    </footer>
+
+    <script>
+        function addToCart(productName) {
+            alert(productName + " added to cart!");
+        }
+    </script>
+
+</body>
+</html>
